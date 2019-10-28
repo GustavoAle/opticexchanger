@@ -1,12 +1,7 @@
-@define-color tone1 #1d212e;
-@define-color tone2 #1c2541;
-@define-color tone3 #3a506b;
-@define-color tone4 #5bc0be;
-@define-color tone5 #6fffe9;
+@define-color bg_color #535353;
 
 window {
-    /*background-color: @tone1;*/
-    background-color: #2a2a2a;
+    background-color: @bg_color;
     border-color: #10615c;
 }
 
@@ -14,9 +9,13 @@ window decoration{
     box-shadow: none;
 }
 
+.GtkWindow{
+    background-color: #45a3b7;
+}
+
 .grid{
 	background-image: none;
-	background-color: @tone1;
+	background-color:@bg_color;
 	border:none;
 	border-bottom:1px solid ;
 
@@ -24,7 +23,7 @@ window decoration{
 
 
 label{
-	color: #dddddd;
+	color: #FFFFFF;
 }
 
 
@@ -53,22 +52,11 @@ entry:focus{
 }
 
 headerbar {
-    background-color: @tone3;
+    background-color:#008B8B;
     border-color: #10615c;
     border-radius: 0px;
     border:0px;
 }
-
-headerbar box.horizontal button{
-	margin: 0px;
-}
-
-headerbar box.horizontal.right button.titlebutton{
-	/*background-color:#ff00ff;*/
-	border-radius:100%;
-	padding: 2px;
-}
-
 
 /*******************************************************************************
                             button
@@ -76,11 +64,11 @@ headerbar box.horizontal.right button.titlebutton{
 
 button {
 	background-image: none;
-	background-color: @tone3;
+	background-color:#008B8B;
 	color: #FFFFFF;
 	border-radius:0px;
 	border:none;
-	border-bottom:1px solid @tone3;
+	border-bottom:1px solid #008B8B;
 	box-shadow: none;
 	padding: 5px;
 	font-size:12px;
@@ -88,13 +76,13 @@ button {
 
 button:hover{
     background-image: none;
-    background-color: @tone4;
+    background-color:#20B2AA;
 }
 
 button:active{
-    background-color: @tone2;
+    background-color: #10615c;
 }
-/*
+
 button.titlebutton.close {
   background-color: #ec7063 ;
   color: white;
@@ -107,34 +95,30 @@ button.titlebutton.close:hover {
 button.titlebutton.close:active{
     background-color:  #cb4335 ;
 }
-*/
+
 
 /******************************************************************************/
 
 switch slider{
-	background-color:@tone3;
+	background-color:#008B8B;
 	color: #FFFFFF;
 }
 
 switch {
-	background-color: @tone2;
+	background-color: #CCCCCC;
 	background-image: none;
 	margin: 5px;
 }
 
 switch:checked{
-	background-color: @tone5;
+	background-color: #00FFBB;
 }
 
-combobox window menu{
-	background-color: @tone3;
+combobox.buttonassets window menu{
+	background-color: #008B8B;
 	color: #FFFFFF;
 }
 
-combobox window menu menuitem:hover{
-	background-color: @tone4;
-}
-
-treeview{
-	background-color:#333333;
+combobox.buttonassets window menu menuitem:hover{
+	background-color:#20B2AA;
 }
