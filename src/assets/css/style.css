@@ -1,0 +1,107 @@
+@define-color bg_color #535353;
+
+window {
+    background-color: @bg_color;
+    border-color: #10615c;
+}
+
+.GtkWindow{
+    background-color: #45a3b7;
+}
+
+.grid{
+	background-image: none;
+	background-color:@bg_color;
+	border:none;
+	border-bottom:1px solid ;
+
+}
+
+
+label{
+	color: #FFFFFF;
+}
+
+
+#lbl_fields{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+#title{
+ 	color: #FFFFFF;
+ 	font-size: 20px;
+}
+
+entry{
+	margin:5px;
+	padding: 5px;
+	border-radius: 0px;
+	border:1px solid #535353;
+
+}
+
+entry:focus{
+	background-image: none;
+	background-color: #DDDD88;
+}
+
+headerbar {
+    background-color:#008B8B;
+    border-color: #10615c;
+    border-radius: 0px;
+    border:0px;
+}
+
+/*******************************************************************************
+                            button
+*******************************************************************************/
+
+button {
+	background-image: none;
+	background-color:#008B8B;
+	color: #FFFFFF;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid #008B8B;
+	box-shadow: none;
+	padding: 5px;
+	font-size:12px;
+}
+
+button:hover{
+    background-image: none;
+    background-color:#20B2AA;
+}
+
+button:active{
+    background-color: #10615c;
+}
+
+button.titlebutton.close {
+  background-color: #ec7063 ;
+  color: white;
+}
+
+button.titlebutton.close:hover {
+  background-color: #cd6155 ;
+}
+
+button.titlebutton.close:active{
+    background-color:  #cb4335 ;
+}
+
+
+/******************************************************************************/
+
+comboboxtext box.linked button.combo {
+    background-color: #008B8B;
+}
+
+
+switch slider:active {
+    background-color: #008B8B;
+    color: #008B8B;
+    border-radius: 0px;
+}

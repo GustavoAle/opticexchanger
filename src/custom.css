@@ -1,0 +1,13 @@
+/*
+Você pode digitar aqui qualquer regra CSS que o GTK+ reconheça.
+Você pode desabilitar temporariamente esse CSS personalizado clicando no botão “Pausar” acima.
+
+As alterações são aplicadas instantaneamente e globalmente, para todo o aplicativo.
+*/
+
+buttonassets combo horizontal{
+	background-color: #000000;
+}
+buttonassets{
+	background-color: #000000;
+}
