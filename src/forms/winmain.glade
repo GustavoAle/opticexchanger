@@ -60,6 +60,7 @@
               <object class="GtkComboBoxText" id="cbConnports">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="active">0</property>
                 <items>
                   <item translatable="yes">/dev/ttyUSB0</item>
                   <item translatable="yes">/dev/ttyUSB1</item>
@@ -389,23 +390,57 @@
           </packing>
         </child>
         <child>
-          <object class="GtkTreeView" id="dataViewer">
+          <object class="GtkPaned">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
-            <property name="margin_left">10</property>
-            <property name="margin_right">10</property>
-            <property name="margin_top">10</property>
-            <property name="margin_bottom">10</property>
             <property name="hexpand">True</property>
             <property name="vexpand">True</property>
-            <property name="model">liststore1</property>
-            <child internal-child="selection">
-              <object class="GtkTreeSelection"/>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkTreeView" id="dataViewer">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="margin_left">10</property>
+                <property name="margin_right">10</property>
+                <property name="margin_top">10</property>
+                <property name="margin_bottom">10</property>
+                <property name="hexpand">True</property>
+                <property name="vexpand">True</property>
+                <property name="model">liststore1</property>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection"/>
+                </child>
+                <child>
+                  <object class="GtkTreeViewColumn">
+                    <property name="title" translatable="yes">column</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
             </child>
             <child>
-              <object class="GtkTreeViewColumn">
-                <property name="title" translatable="yes">column</property>
+              <object class="GtkScrolledWindow">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="margin_left">10</property>
+                <property name="margin_right">10</property>
+                <property name="margin_bottom">10</property>
+                <property name="hscrollbar_policy">never</property>
+                <property name="shadow_type">in</property>
+                <child>
+                  <object class="GtkTextView">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                  </object>
+                </child>
               </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
             </child>
           </object>
           <packing>

@@ -1,12 +1,12 @@
-@define-color tone1 #212f33;
-@define-color tone2 #243d44;
-@define-color tone3 #2d5a66;
-@define-color tone4 #5b9dad;
-@define-color tone5 #a2dae8;
+@define-color tone1 #1d212e;
+@define-color tone2 #1c2541;
+@define-color tone3 #3a506b;
+@define-color tone4 #5bc0be;
+@define-color tone5 #6fffe9;
 
 window {
-    background-color: @tone1;
-    /*background-color: #2a2a2a;*/
+    /*background-color: @tone1;*/
+    background-color: #2a2a2a;
     border-color: #10615c;
 }
 
@@ -24,8 +24,7 @@ window decoration{
 
 
 label{
-	/*color: #dddddd;*/
-    color: @tone5;
+	color: #dddddd;
 }
 
 
@@ -41,15 +40,16 @@ label{
 }
 
 entry{
-	margin:0px;
+	margin:5px;
 	padding: 5px;
 	border-radius: 0px;
 	border:1px solid #535353;
+
 }
 
 entry:focus{
 	background-image: none;
-	background-color: @tone5;
+	background-color: #DDDD88;
 }
 
 headerbar {
@@ -118,56 +118,23 @@ switch slider{
 
 switch {
 	background-color: @tone2;
-	background-image: url("../img/switch.png");
+	background-image: none;
 	margin: 5px;
 }
 
 switch:checked{
 	background-color: @tone5;
-    background-image: url("../img/switch-active.png");
 }
 
 combobox window menu{
 	background-color: @tone3;
-	color: @tone5;
+	color: #FFFFFF;
 }
 
 combobox window menu menuitem:hover{
 	background-color: @tone4;
 }
 
-button.combo {
-    margin: 5px;
-}
-
-button.combo cellview{
-	color: @tone5;
-}
-
 treeview{
-	/*background-color:#333333;*/
-    background-color: @tone2;
-}
-
-textview.view {
-    padding: 5px;
-    background-color: @tone2;
-}
-
-textview.view text{
-    color: @tone5;
-	background-color: @tone2;
-}
-
-textview.view{
-	font-family: "FreeMono";
-	caret-color: @tone5;
-}
-
-paned separator{
-	background-image:none;
-}
-
-scrolledwindow{
-	border-color:#2d5a66;
+	background-color:#333333;
 }
