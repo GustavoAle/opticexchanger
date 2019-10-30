@@ -6,6 +6,7 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('Gdk', '3.0')
 from gi.repository import Gio,Gdk,Gtk
 
+
 def callGtk():
     print("gtk started")
     Gtk.main()
@@ -40,31 +41,23 @@ def gtk_style():
     style_provider = Gtk.CssProvider()
     style_provider.load_from_path(css)
 
-    '''
-    Gtk.StyleContext.remove_provider_for_screen(
-            Gdk.Screen.get_default(),
-            style_provider
-    )
-    '''
-    
     Gtk.StyleContext.add_provider_for_screen(
         Gdk.Screen.get_default(),
         style_provider,
         Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
     )
 
-def main():
-
-    gtk_style()
-    mainBuilder = MainBuilder()
-    window = mainBuilder.get_mainwindow()
-    #self.style()
-    window.show_all()
 
 #*******************************************************************************
 #                               gtk mainthread
 #*******************************************************************************
-main()
+
+gtk_style()
+mainBuilder = MainBuilder()
+window = mainBuilder.get_mainwindow()
+#self.style()
+window.show_all()
+
 gtkThread = threading.Thread(target=Gtk.main)
 gtkThread.start()
 #Gtk.main()

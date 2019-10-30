@@ -14,30 +14,9 @@ window decoration{
     box-shadow: none;
 }
 
-.grid{
-	background-image: none;
-	background-color: @tone1;
-	border:none;
-	border-bottom:1px solid ;
-
-}
-
-
 label{
 	/*color: #dddddd;*/
     color: @tone5;
-}
-
-
-#lbl_fields{
-	color: #FFFFFF;
-	font-weight: bold;
-}
-
-
-#title{
- 	color: #FFFFFF;
- 	font-size: 20px;
 }
 
 entry{
@@ -114,12 +93,14 @@ button.titlebutton.close:active{
 switch slider{
 	background-color:@tone3;
 	color: #FFFFFF;
+    border-radius: 0px;
 }
 
 switch {
 	background-color: @tone2;
 	background-image: url("../img/switch.png");
 	margin: 5px;
+    border-radius: 0px;
 }
 
 switch:checked{
