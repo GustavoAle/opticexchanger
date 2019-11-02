@@ -30,6 +30,7 @@
     <property name="can_focus">False</property>
     <property name="default_width">1080</property>
     <property name="default_height">720</property>
+    <property name="icon">../assets/img/logo-64.png</property>
     <signal name="destroy" handler="onDestroy" swapped="no"/>
     <child type="titlebar">
       <object class="GtkHeaderBar">
