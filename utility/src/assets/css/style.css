@@ -1,0 +1,154 @@
+@define-color tone1 #212f33;
+@define-color tone2 #243d44;
+@define-color tone3 #2d5a66;
+@define-color tone4 #5b9dad;
+@define-color tone5 #a2dae8;
+
+window {
+    background-color: @tone1;
+    /*background-color: #2a2a2a;*/
+    border-color: #10615c;
+}
+
+window decoration{
+    box-shadow: none;
+}
+
+label{
+	/*color: #dddddd;*/
+    color: @tone5;
+}
+
+entry{
+	margin:0px;
+	padding: 5px;
+	border-radius: 0px;
+	border:1px solid #535353;
+}
+
+entry:focus{
+	background-image: none;
+	background-color: @tone5;
+}
+
+headerbar {
+    background-color: @tone3;
+    border-color: #10615c;
+    border-radius: 0px;
+    border:0px;
+}
+
+headerbar box.horizontal button{
+	margin: 0px;
+}
+
+headerbar box.horizontal.right button.titlebutton{
+	/*background-color:#ff00ff;*/
+	border-radius:100%;
+	padding: 2px;
+}
+
+
+/*******************************************************************************
+                            button
+*******************************************************************************/
+
+button {
+	background-image: none;
+	background-color: @tone3;
+	color: #FFFFFF;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid @tone3;
+	box-shadow: none;
+	padding: 5px;
+	font-size:12px;
+}
+
+button:hover{
+    background-image: none;
+    background-color: @tone4;
+}
+
+button:active{
+    background-color: @tone2;
+}
+/*
+button.titlebutton.close {
+  background-color: #ec7063 ;
+  color: white;
+}
+
+button.titlebutton.close:hover {
+  background-color: #cd6155 ;
+}
+
+button.titlebutton.close:active{
+    background-color:  #cb4335 ;
+}
+*/
+
+/******************************************************************************/
+
+switch slider{
+	background-color:@tone3;
+	color: #FFFFFF;
+    border-radius: 0px;
+}
+
+switch {
+	background-color: @tone2;
+	background-image: url("../img/switch.png");
+	margin: 5px;
+    border-radius: 0px;
+}
+
+switch:checked{
+	background-color: @tone5;
+    background-image: url("../img/switch-active.png");
+}
+
+combobox window menu{
+	background-color: @tone3;
+	color: @tone5;
+}
+
+combobox window menu menuitem:hover{
+	background-color: @tone4;
+}
+
+button.combo {
+    margin: 5px;
+}
+
+button.combo cellview{
+	color: @tone5;
+}
+
+treeview{
+	/*background-color:#333333;*/
+    background-color: @tone2;
+}
+
+textview.view {
+    padding: 5px;
+    background-color: @tone2;
+}
+
+textview.view text{
+    color: @tone5;
+	background-color: @tone2;
+}
+
+textview.view{
+	font-family: "FreeMono";
+	caret-color: @tone5;
+}
+
+paned separator{
+	background-image:none;
+}
+
+scrolledwindow{
+	border-color:#2d5a66;
+}

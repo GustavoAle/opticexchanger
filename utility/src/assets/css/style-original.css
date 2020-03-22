@@ -1,0 +1,140 @@
+@define-color tone1 #1d212e;
+@define-color tone2 #1c2541;
+@define-color tone3 #3a506b;
+@define-color tone4 #5bc0be;
+@define-color tone5 #6fffe9;
+
+window {
+    /*background-color: @tone1;*/
+    background-color: #2a2a2a;
+    border-color: #10615c;
+}
+
+window decoration{
+    box-shadow: none;
+}
+
+.grid{
+	background-image: none;
+	background-color: @tone1;
+	border:none;
+	border-bottom:1px solid ;
+
+}
+
+
+label{
+	color: #dddddd;
+}
+
+
+#lbl_fields{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+
+#title{
+ 	color: #FFFFFF;
+ 	font-size: 20px;
+}
+
+entry{
+	margin:5px;
+	padding: 5px;
+	border-radius: 0px;
+	border:1px solid #535353;
+
+}
+
+entry:focus{
+	background-image: none;
+	background-color: #DDDD88;
+}
+
+headerbar {
+    background-color: @tone3;
+    border-color: #10615c;
+    border-radius: 0px;
+    border:0px;
+}
+
+headerbar box.horizontal button{
+	margin: 0px;
+}
+
+headerbar box.horizontal.right button.titlebutton{
+	/*background-color:#ff00ff;*/
+	border-radius:100%;
+	padding: 2px;
+}
+
+
+/*******************************************************************************
+                            button
+*******************************************************************************/
+
+button {
+	background-image: none;
+	background-color: @tone3;
+	color: #FFFFFF;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid @tone3;
+	box-shadow: none;
+	padding: 5px;
+	font-size:12px;
+}
+
+button:hover{
+    background-image: none;
+    background-color: @tone4;
+}
+
+button:active{
+    background-color: @tone2;
+}
+/*
+button.titlebutton.close {
+  background-color: #ec7063 ;
+  color: white;
+}
+
+button.titlebutton.close:hover {
+  background-color: #cd6155 ;
+}
+
+button.titlebutton.close:active{
+    background-color:  #cb4335 ;
+}
+*/
+
+/******************************************************************************/
+
+switch slider{
+	background-color:@tone3;
+	color: #FFFFFF;
+}
+
+switch {
+	background-color: @tone2;
+	background-image: none;
+	margin: 5px;
+}
+
+switch:checked{
+	background-color: @tone5;
+}
+
+combobox window menu{
+	background-color: @tone3;
+	color: #FFFFFF;
+}
+
+combobox window menu menuitem:hover{
+	background-color: @tone4;
+}
+
+treeview{
+	background-color:#333333;
+}
